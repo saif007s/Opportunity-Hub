@@ -44,7 +44,7 @@ const Singup = () => {
     }
     try {
       dispatch(setLoading(true));
-      const res = await axios.post("https://opportunityhub-git-main-saif-ahmads-projects-889baecc.vercel.app/", formData, {
+      const res = await axios.post("http://localhost:8000/api/v1/user/register", formData, {
         headers: {
           "Content-Type": "multipart/form-data"
         },
